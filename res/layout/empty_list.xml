@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/default_fantasy"
+	android:padding="@dimen/medium"
+	android:text="@string/no_tweets"
+	android:textStyle="bold"
+	android:textColor="@android:color/white"
+	android:layout_gravity="center_vertical|center_horizontal"
+	android:textAppearance="?android:attr/textAppearanceMedium"
+	android:gravity="center_vertical|center_horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" />

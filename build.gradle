@@ -1,0 +1,71 @@
+/*
+ * The MIT License (MIT)
+ * Copyright (c) 2014 longkai
+ * The software shall be used for good, not evil.
+ */
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:1.2.3'
+	}
+}
+
+// for our non-android-support libs, such as gson, etc.
+repositories {
+	// prefer and fall back
+	jcenter()
+	mavenCentral()
+}
+
+apply plugin: 'android'
+
+ext {
+	supportLibVersion = '22.2.0'
+}
+
+android {
+	compileSdkVersion 22
+	buildToolsVersion = '22.0.1'
+
+	sourceSets {
+		defaultConfig {
+			// testPackageName 'org.catnut.tests'
+		}
+
+		main {
+			assets.srcDirs = ['assets']
+			res.srcDirs = ['res']
+			aidl.srcDirs = ['src']
+			resources.srcDirs = ['src']
+			renderscript.srcDirs = ['src']
+			java.srcDirs = ['src']
+			manifest.srcFile 'AndroidManifest.xml'
+		}
+
+		instrumentTest {
+			assets.srcDirs = ["tests/assets"]
+			res.srcDirs = ["tests/res"]
+			resources.srcDirs = ["tests/src"]
+			java.srcDirs = ["tests/src"]
+		}
+	}
+}
+
+dependencies {
+	// if you use Android Studio with a lib has its own res/ directory,
+	// and that lib is not available in remote maven repo,
+	// you need to use gradle' s multi-project build facility.
+	// if you don' t know how it works, please refer Gradle' s docs or google.
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+	compile "com.android.support:support-v4:$supportLibVersion"
+	compile "com.android.support:support-v13:$supportLibVersion"
+	compile 'com.mcxiaoke.volley:library:1.0.+'
+  compile 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'
+	compile 'com.squareup.picasso:picasso:2.5.2'
+	compile 'com.etsy.android.grid:library:1.0.4' // 源码有修改注释掉了com.etsy.android.grid.ExtendableListView 557-561
+	compile 'com.squareup.okhttp:okhttp-urlconnection:2.4.0'
+	compile 'com.squareup.okhttp:okhttp:2.4.0' // 事实上，不用也可以，用自身的httpurlconnection
+}
+

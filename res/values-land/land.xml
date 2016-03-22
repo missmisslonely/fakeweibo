@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+<resources>
+	<integer name="emotions_columns">8</integer>
+	<dimen name="emotion_window_height">200dp</dimen>
+
+	<dimen name="gallery_desc_height">50dp</dimen>
+
+	<dimen name="zhihu_title_height">70dp</dimen>
+</resources>

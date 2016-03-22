@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:paddingLeft="@dimen/medium"
+	android:paddingRight="@dimen/medium"
+	android:descendantFocusability="blocksDescendants"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<FrameLayout
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent">
+
+		<View
+			android:layout_gravity="center"
+			android:background="?android:attr/listDivider"
+			android:layout_width="1px"
+			android:layout_height="match_parent" />
+
+		<ImageView
+			android:id="@+id/avatar"
+			android:layout_gravity="top|center_horizontal"
+			android:layout_marginTop="@dimen/medium"
+			android:layout_marginBottom="@dimen/medium"
+			android:background="?android:attr/selectableItemBackground"
+			android:layout_width="36dp"
+			android:layout_height="36dp" />
+
+		<TextView
+			android:id="@+id/create_at"
+			android:layout_gravity="bottom|center_horizontal"
+			android:gravity="center"
+			android:textColor="@color/black50PercentColor"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</FrameLayout>
+
+	<LinearLayout
+		android:layout_marginTop="@dimen/medium"
+		android:layout_marginBottom="@dimen/medium"
+		android:layout_marginLeft="@dimen/medium"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/screen_name"
+			android:singleLine="true"
+			android:ellipsize="end"
+			android:textColor="@color/black25PercentColor"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<org.catnut.support.TweetTextView
+			android:id="@+id/text"
+			android:background="?android:attr/selectableItemBackground"
+			android:clickable="true"
+			android:focusable="true"
+			android:layout_marginTop="@dimen/medium"
+			android:textColor="@color/black38PercentColor"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+</LinearLayout>

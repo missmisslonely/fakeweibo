@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+<resources>
+	<item name="refresh" type="id" />
+	<item name="pref" type="id" />
+	<item name="fragment_container" type="id" />
+	<item name="drawer_layout" type="id" />
+	<item name="drawer" type="id" />
+	<item name="pager" type="id" />
+	<item name="view_stub" type="id" />
+	<item name="action_reteet" type="id" />
+	<item name="action_reply" type="id" />
+	<item name="action_favorite" type="id" />
+	<item name="action_search" type="id" />
+	<item name="action_follow" type="id" />
+	<item name="action_unfollow" type="id" />
+	<item name="action_share" type="id" />
+	<item name="action_save" type="id" />
+	<item name="action_back_top" type="id" />
+
+	<item name="list_header" type="id" />
+
+	<item name="tweet_layout" type="id" />
+	<item name="avatar_profile" type="id" />
+	<item name="nick" type="id" />
+	<item name="verified" type="id" />
+	<item name="dummy" type="id" />
+	<item name="description" type="id" />
+	<item name="statics" type="id" />
+	<item name="following_count" type="id" />
+	<item name="followers_count" type="id" />
+	<item name="tweets_count" type="id" />
+	<item name="nav_text" type="id" />
+
+	<item name="action_my_tweets" type="id" />
+	<item name="action_my_followers" type="id" />
+	<item name="action_my_followings" type="id" />
+	<item name="action_my_list" type="id" />
+	<item name="action_my_favorites" type="id" />
+	<item name="action_my_drafts" type="id" />
+
+	<item name="action_share_app" type="id" />
+	<item name="action_view_source_code" type="id" />
+	<item name="fantasy" type="id" />
+	<item name="toggle_desc" type="id" />
+</resources>

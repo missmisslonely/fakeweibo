@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/action_compose"
+		android:title="@string/compose"
+		android:icon="@drawable/ic_title_compose"
+		android:showAsAction="always" />
+	<item
+		android:id="@+id/action_refresh_news_count"
+		android:title="@string/news_count"
+		android:icon="@drawable/ic_action_retry"
+		android:showAsAction="always"/>
+	<item
+		android:id="@+id/cancellation"
+		android:title="@string/cancellation"
+		android:showAsAction="never" />
+	<item
+		android:id="@+id/logout"
+		android:title="@string/logout"
+		android:showAsAction="never" />
+	<item
+		android:id="@+id/plugins"
+		android:title="@string/plugins"
+		android:showAsAction="never" />
+	<item
+		android:id="@id/pref"
+		android:title="@string/pref"
+		android:showAsAction="never" />
+</menu>

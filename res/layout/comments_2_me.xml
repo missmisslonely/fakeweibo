@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:padding="@dimen/medium"
+	android:descendantFocusability="blocksDescendants"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<TextView
+		android:id="@+id/my_create_at"
+		android:padding="@dimen/small"
+		android:textColor="@color/black50PercentColor"
+		android:background="@drawable/date_balloon"
+		android:layout_centerHorizontal="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<FrameLayout
+		android:id="@+id/dummy"
+		android:layout_below="@id/my_create_at"
+		android:layout_marginTop="@dimen/small"
+		android:layout_alignParentRight="true"
+		android:background="@drawable/balloon_outgoing"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<org.catnut.support.TweetTextView
+			android:id="@+id/my_text"
+			android:layout_margin="@dimen/medium"
+			android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+			android:textColor="@color/black25PercentColor"
+			android:textColorLink="@android:color/holo_blue_bright"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</FrameLayout>
+
+
+	<TextView
+		android:id="@+id/his_create_at"
+		android:layout_below="@id/dummy"
+		android:padding="@dimen/small"
+		android:layout_marginTop="@dimen/small"
+		android:textColor="@color/black50PercentColor"
+		android:background="@drawable/date_balloon"
+		android:layout_centerHorizontal="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<ImageView
+		android:id="@+id/avatar"
+		android:layout_below="@id/his_create_at"
+		android:layout_marginTop="@dimen/small"
+		android:clickable="true"
+		android:background="@drawable/avatar_background"
+		android:layout_width="50dp"
+		android:layout_height="50dp" />
+
+	<LinearLayout
+		android:id="@+id/place_holder"
+		android:orientation="vertical"
+		android:layout_toRightOf="@id/avatar"
+		android:layout_alignTop="@id/avatar"
+		android:background="@drawable/balloon_incoming"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/screen_name"
+			android:textStyle="bold"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="@color/black25PercentColor"
+			android:layout_marginLeft="@dimen/medium"
+			android:layout_marginRight="@dimen/medium"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<org.catnut.support.TweetTextView
+			android:id="@+id/his_text"
+			android:layout_margin="@dimen/medium"
+			android:clickable="true"
+			android:focusable="true"
+			android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+			android:textColor="@color/black25PercentColor"
+			android:textColorLink="@android:color/holo_blue_bright"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</RelativeLayout>

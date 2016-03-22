@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+<resources>
+	<string name="pref_plugins">pref_plugins</string>
+	<string name="pref_enable_zhihu">pref_enable_zhihu</string>
+	<string name="pref_enable_zhihu_pager">pref_enable_zhihu_pager</string>
+	<string name="pref_enable_zhihu_auto_refresh">pref_enable_zhihu_auto_refresh</string>
+	<string name="pref_enable_cache_zhihu_images">pref_enable_cache_zhihu_images</string>
+	<string name="pref_zhihu_typeface">pref_zhihu_typeface</string>
+
+	<string name="pref_fantasy_say_salutation">pref_fantasy_say_salutation</string>
+
+	<bool name="default_plugin_status">false</bool>
+	<bool name="default_fantasy_say_salutation">true</bool>
+	<bool name="pref_enable_fantasy">false</bool>
+	<bool name="pref_enter_home_directly">true</bool>
+</resources>

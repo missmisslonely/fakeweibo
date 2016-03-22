@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+
+<android.support.v4.widget.SwipeRefreshLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@id/refresh"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<org.catnut.support.QuickReturnScrollView
+		android:id="@+id/quick_return"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+			<LinearLayout
+				android:padding="@dimen/large"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:id="@android:id/title"
+					android:textStyle="bold"
+					android:clickable="true"
+					android:focusable="true"
+					android:background="?android:selectableItemBackground"
+					android:gravity="left|center_vertical"
+					android:textColor="@color/black25PercentColor"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+
+				<View
+					android:background="?android:attr/listDivider"
+					android:layout_marginTop="@dimen/small"
+					android:layout_marginBottom="@dimen/small"
+					android:layout_width="match_parent"
+					android:layout_height="1px" />
+
+				<LinearLayout
+					android:layout_marginTop="@dimen/small"
+					android:id="@+id/question"
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+
+				<View
+					android:background="?android:attr/listDivider"
+					android:layout_marginTop="@dimen/small"
+					android:layout_marginBottom="@dimen/small"
+					android:layout_width="match_parent"
+					android:layout_height="1px" />
+
+				<TextView
+					android:id="@+id/author"
+					android:textStyle="bold"
+					android:layout_marginBottom="@dimen/large"
+					android:textColor="@color/black25PercentColor"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+
+				<LinearLayout
+					android:id="@+id/answer"
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+
+				<View
+					android:background="?android:attr/listDivider"
+					android:layout_marginTop="@dimen/small"
+					android:layout_marginBottom="@dimen/small"
+					android:layout_width="match_parent"
+					android:layout_height="1px" />
+
+				<TextView
+					android:id="@+id/last_alter_date"
+					android:layout_gravity="right"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+	</org.catnut.support.QuickReturnScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

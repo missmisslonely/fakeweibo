@@ -1,0 +1,40 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+proguard_logs/
+
+# Ignore gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Intellij IDEA(Android Studio)
+out/
+.idea/
+*.iml
+
+# Eclipse
+.classpath
+.project
+proguard/
+
+# macosx
+.DS_Store
+
+# sometimes, may be a vim tmp file
+*~
+
+# ignore our default cover, it may change overtime.
+default_fantasy.jpg

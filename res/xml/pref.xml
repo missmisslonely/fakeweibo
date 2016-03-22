@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="@string/general_settings">
+
+		<ListPreference
+			android:key="@string/pref_default_fetch_size"
+			android:defaultValue="@integer/default_fetch_size"
+			android:title="@string/tweets_count_per_fetch"
+			android:summary="@string/tweets_count_per_fetch_summary"
+			android:dialogTitle="@string/tweets_count_per_fetch"
+			android:entries="@array/fetch_size_pref_entries"
+			android:entryValues="@array/fetch_size_pref_entries" />
+
+		<CheckBoxPreference
+			android:key="@string/pref_keep_latest"
+			android:defaultValue="true"
+			android:title="@string/auto_fetch_on_start"
+			android:summary="@string/auto_fetch_on_start_summary" />
+
+		<CheckBoxPreference
+			android:key="@string/pref_show_latest_tweet"
+			android:defaultValue="true"
+			android:title="@string/show_latest_tweet"
+			android:summary="@string/show_latest_tweet_summary" />
+
+		<Preference
+			android:key="@string/pref_clear_cache"
+			android:summary="@string/clear_cache_summary"
+			android:title="@string/clear_cache" />
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/advanced_settings">
+		<Preference
+			android:key="@string/pref_plugins"
+			android:title="@string/plugins"
+			android:summary="@string/plugins_summay" />
+
+		<Preference
+			android:key="@string/pref_customize_tweet_font"
+			android:defaultValue="@string/default_typeface"
+			android:title="@string/font"
+			android:summary="@string/change_font_summary" />
+
+		<ListPreference
+			android:key="@string/pref_tweet_font_size"
+			android:defaultValue="@integer/default_tweet_font_size"
+			android:title="@string/font_size"
+			android:summary="@string/adjust_font_size_summary"
+			android:entries="@array/tweet_font_size_entries"
+			android:entryValues="@array/tweet_font_size_entryValues" />
+
+		<ListPreference
+			android:key="@string/pref_line_spacing"
+			android:defaultValue="@string/default_line_spacing"
+			android:title="@string/line_spacing"
+			android:summary="@string/line_spacing_summary"
+			android:entries="@array/line_spacing_entries"
+			android:entryValues="@array/line_spacing_entries" />
+
+		<ListPreference
+			android:key="@string/pref_thumbs_options"
+			android:title="@string/show_thumbs"
+			android:defaultValue="@string/default_thumbs_option"
+			android:summary="@string/show_thumbs_summary"
+			android:entries="@array/thumbs_options_entries"
+			android:entryValues="@array/thumbs_options_entryValues" />
+
+		<CheckBoxPreference
+			android:key="@string/pref_enable_analytics"
+			android:title="@string/enable_analytics"
+			android:defaultValue="true"
+			android:summary="@string/enable_analytics_summary" />
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/about">
+
+		<Preference
+			android:key="@string/pref_version"
+			android:title="@string/version"
+			android:summary="@string/version_name" />
+
+		<Preference
+			android:key="@string/pref_notes"
+			android:title="@string/notes"
+			android:summary="@string/notes_summary" />
+
+		<Preference
+			android:key="@string/pref_author"
+			android:title="@string/author"
+			android:summary="{ } with ♥ by longkai in Guilin" />
+
+		<Preference
+			android:key="@string/pref_source_code"
+			android:title="@string/source_code"
+			android:summary="@string/source_code_summary" />
+
+		<Preference
+			android:key="@string/pref_open_source_license"
+			android:title="Open Source Licenses" />
+	</PreferenceCategory>
+</PreferenceScreen>

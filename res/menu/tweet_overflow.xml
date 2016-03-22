@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:showAsAction="always"
+		android:id="@id/action_favorite"
+		android:title="@string/favorite"
+		android:icon="@drawable/ic_title_favorite" />
+	<item
+		android:id="@android:id/copy"
+		android:title="@android:string/copy" />
+	<item
+		android:showAsAction="always"
+		android:id="@+id/action_like"
+		android:title="@string/like" />
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/action_gallery"
+		android:title="@string/add_photo"
+		android:icon="@drawable/ic_action_compoe_gallery"
+		android:showAsAction="always" />
+
+	<item
+		android:id="@+id/action_camera"
+		android:title="@string/take_a_photo"
+		android:icon="@drawable/ic_action_camera"
+		android:showAsAction="always" />
+
+	<item
+		android:id="@+id/action_discovery"
+		android:title="@string/discovery"
+		android:icon="@drawable/ic_title_discover"
+		android:showAsAction="always" />
+
+	<item
+		android:id="@+id/action_mention"
+		android:title="@string/mention"
+		android:showAsAction="ifRoom|collapseActionView"
+		android:actionLayout="@layout/search"
+		android:icon="@drawable/ic_stat_mention" />
+
+	<item
+		android:id="@+id/action_shorten"
+		android:title="@string/shorten"
+		android:showAsAction="never" />
+
+	<item
+		android:id="@id/pref"
+		android:title="@string/pref"
+		android:showAsAction="never" />
+</menu>

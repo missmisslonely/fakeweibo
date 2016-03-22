@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<android.support.v4.widget.SwipeRefreshLayout
+		android:id="@id/refresh"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ListView android:id="@android:id/list"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />
+	</android.support.v4.widget.SwipeRefreshLayout>
+
+  	<LinearLayout android:id="@+id/confirmbar" style="@style/ConfirmBar">
+		<TextView android:id="@+id/confirmbar_message" style="@style/ConfirmBarMessage" />
+		<Button android:id="@+id/confirm_button" style="@style/ConfirmBarButton" />
+	</LinearLayout>
+
+</FrameLayout>

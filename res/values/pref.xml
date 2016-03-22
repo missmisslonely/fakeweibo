@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+<resources>
+	<string name="version_name">0.9 纯真年代</string>
+	<string name="camera_cached_dir">/camera/</string>
+	<bool name="pref_true">true</bool>
+	<bool name="pref_false">false</bool>
+
+	<string name="pref_first_run">pref_first_run</string>
+	<string name="pref_keep_latest">pref_auto_fetch_on_start</string>
+	<string name="pref_default_fetch_size">pref_default_fetch_size</string>
+	<string name="pref_tweet_font_size">pref_tweet_font_size</string>
+	<string name="pref_thumbs_options">pref_thumbs_options</string>
+	<string name="pref_customize_tweet_font">pref_customize_tweet_font</string>
+	<string name="pref_version">pref_about</string>
+	<string name="pref_notes">pref_notes</string>
+	<string name="pref_author">pref_author</string>
+	<string name="pref_source_code">pref_source_code</string>
+	<string name="pref_open_source_license">pref_open_source_license</string>
+	<string name="pref_enable_analytics">pref_enable_analytics</string>
+	<string name="pref_show_latest_tweet">pref_show_latest_tweet</string>
+	<string name="pref_enable_fantasy">pref_enable_fantasy</string>
+	<string name="pref_enter_home_directly">pref_enter_home_directly</string>
+	<string name="pref_enter_fantasy_times">pref_enter_fantasy_times</string>
+	<string name="pref_run_times">pref_run_times</string>
+	<string name="pref_check_upgrade">pref_check_upgrade</string>
+	<string name="pref_line_spacing">pref_line_spacing</string>
+	<string name="pref_clear_cache">pref_clear_cache</string>
+
+	<integer name="default_fetch_size">20</integer>
+	<string name="default_typeface">null</string>
+	<string name="default_thumbs_option">@string/thumb_medium</string>
+	<integer name="default_tweet_font_size">16</integer>
+	<string name="default_line_spacing">1.0</string>
+
+	<bool name="pref_load_more_from_cloud">true</bool>
+
+	<!-- cannot use integer array Orz... -->
+	<string-array name="fetch_size_pref_entries">
+		<item>20</item>
+		<item>40</item>
+		<item>60</item>
+		<item>80</item>
+		<item>100</item>
+	</string-array>
+
+	<string-array name="tweet_font_size_entries">
+		<item>极小</item>
+		<item>较小</item>
+		<item>正常</item>
+		<item>较大</item>
+		<item>极大</item>
+	</string-array>
+	<string-array name="tweet_font_size_entryValues">
+		<item>12</item>
+		<item>14</item>
+		<item>16</item>
+		<item>18</item>
+		<item>20</item>
+	</string-array>
+
+	<string-array name="thumbs_options_entries">
+		<item>不显示</item>
+		<item>显示较小缩略图</item>
+		<item>显示中等缩略图</item>
+	</string-array>
+	<string name="thumb_small">small</string>
+	<string name="thumb_medium">medium</string>
+	<string name="thumb_none">none</string>
+	<string name="thumb_original">large</string>
+	<string-array name="thumbs_options_entryValues">
+		<item>@string/thumb_none</item>
+		<item>@string/thumb_small</item>
+		<item>@string/thumb_medium</item>
+	</string-array>
+
+	<string-array name="line_spacing_entries">
+		<item>1.0</item>
+		<item>1.1</item>
+		<item>1.2</item>
+		<item>1.3</item>
+		<item>1.4</item>
+		<item>1.5</item>
+	</string-array>
+</resources>

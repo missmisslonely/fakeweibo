@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ The MIT License (MIT)
+  ~ Copyright (c) 2014 longkai
+  ~ The software shall be used for good, not evil.
+  -->
+<resources>
+
+	<style name="AppTheme" parent="android:Theme.Holo">
+
+	</style>
+
+	<style name="AppTheme.Light" parent="android:Theme.Holo.Light">
+		<item name="android:windowBackground">@color/snowColor</item>
+		<item name="android:actionBarStyle">@style/ActionBar_Light</item>
+		<item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle_Light</item>
+		<!--<item name="android:homeAsUpIndicator">@drawable/ic_title_up_default</item>-->
+		<item name="android:homeAsUpIndicator">@drawable/ic_ab_back</item>
+		<item name="android:actionBarTabStyle">@style/ActionBar_Light_TabStyle</item>
+		<item name="android:actionBarTabTextStyle">@style/ActionBar_Light_TabTextStyle</item>
+		<item name="android:actionBarTabBarStyle">@style/ActionBar_Light_TabBarStyle</item>
+		<item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+		<item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+		<item name="android:webTextViewStyle">@style/RobotoWebViewStyle</item>
+		<item name="android:actionBarItemBackground">@drawable/actionbar_item_background_light</item>
+		<item name="android:spinnerDropDownItemStyle">@style/Spinner_Text_Style</item>
+		<item name="android:spinnerStyle">@style/Spinner_Style_Light</item>
+	</style>
+
+	<style name="AppTheme.Dark" parent="android:Theme.Holo">
+
+	</style>
+
+	<!--
+	***********************
+	light theme goes first!
+	***********************
+	-->
+	<style name="OverflowButtonStyle_Light" parent="android:Widget.Holo.Light.ActionButton.Overflow">
+		<item name="android:src">@drawable/ic_title_overflow_default</item>
+	</style>
+
+	<style name="ActionBar_Light" parent="android:Widget.Holo.ActionBar">
+		<item name="android:icon">@drawable/app_logo</item>
+		<item name="android:titleTextStyle">@style/ActionBar_Light_TextStyle</item>
+		<item name="android:subtitleTextStyle">@style/ActionBar_SubtitleTextStyle</item>
+		<item name="android:background">@color/actionbar_background</item>
+		<item name="android:backgroundSplit">@color/actionbar_background</item>
+		<item name="android:displayOptions">useLogo|homeAsUp|showTitle|showHome</item>
+	</style>
+
+	<style name="ActionBar_Light_TextStyle" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">@android:color/white</item>
+	</style>
+
+	<style name="ActionBar_SubtitleTextStyle" parent="android:TextAppearance.Holo.Widget.ActionBar.Subtitle">
+		<item name="android:textColor">@android:color/white</item>
+	</style>
+
+	<style name="ActionBar_Light_TabStyle" parent="android:Widget.Holo.Light.ActionBar.TabView">
+		<item name="android:background">@drawable/tab_background</item>
+	</style>
+
+	<style name="ActionBar_Light_TabTextStyle" parent="android:Widget.Holo.ActionBar.TabText">
+		<item name="android:textColor">@color/tab_text</item>
+	</style>
+
+	<style name="ActionBar_Light_TabBarStyle" parent="android:Widget.Holo.Light.ActionBar.TabBar">
+		<item name="android:background">@color/ivoryColor</item>
+	</style>
+
+	<style name="Spinner_Text_Style" parent="android:Widget.Holo.Light.DropDownItem.Spinner">
+		<item name="android:textColor">@color/black25PercentColor</item>
+	</style>
+
+	<!--enlarge spinner space-->
+	<style name="Spinner_Style_Light" parent="android:Widget.Holo.Light.Spinner">
+		<item name="android:padding">@dimen/medium</item>
+	</style>
+
+	<!-- Roboto font -->
+	<style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+		<item name="android:fontFamily">sans-serif-light</item>
+	</style>
+
+	<style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+		<item name="android:fontFamily">sans-serif-light</item>
+	</style>
+
+	<style name="RobotoWebViewStyle" parent="android:Widget.Holo.Light.WebTextView">
+		<item name="android:fontFamily">sans-serif-light</item>
+	</style>
+
+	<!--
+	***********************
+	below is dark theme!
+	***********************
+	-->
+
+	<!--fancy-->
+	<style name="Theme.Fantasy" parent="_Theme_Fantasy" />
+
+	<!--for convenient api 19-->
+	<style name="_Theme_Fantasy" parent="android:Theme.Holo">
+		<item name="android:actionBarStyle">@style/About.ActionBar</item>
+		<!--<item name="android:homeAsUpIndicator">@drawable/ic_title_up_default</item>-->
+		<item name="android:homeAsUpIndicator">@drawable/ic_ab_back</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowActionBarOverlay">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:titleTextStyle">@style/ActionBar_Light_TextStyle</item>
+		<item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle_Light</item>
+	</style>
+
+	<style name="About.ActionBar" parent="android:Widget.Holo.Light.ActionBar">
+		<item name="android:icon">@drawable/app_logo</item>
+		<item name="android:titleTextStyle">@style/ActionBar_Light_TextStyle</item>
+		<item name="android:background">@null</item>
+		<item name="android:displayOptions">useLogo|showHome|showTitle|homeAsUp</item>
+	</style>
+</resources>
